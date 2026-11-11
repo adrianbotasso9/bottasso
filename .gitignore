@@ -1,0 +1,14 @@
+# Build artifacts
+*.iso
+*.img
+
+# Respaldos locales de rebrand (no versionar)
+*.bottasso.bak
+
+# Python
+__pycache__/
+*.pyc
+
+# Editores
+*.swp
+*~
