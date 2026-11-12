@@ -16,7 +16,7 @@ configuración de sistema, tema de login SDDM, logo de la distro y guías de uso
 | Boot | Limine (UEFI, dual-boot con Windows) |
 | Zona horaria | America/Santiago (`-03`) |
 | URL inicio | https://bottasso.dev/ |
-| Repositorio | https://github.com/bottasso/bottasso |
+| **Repositorio** | https://github.com/adrianbotasso9/bottasso |
 
 ## estructura del proyecto
 ```
