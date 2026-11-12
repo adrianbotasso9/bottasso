@@ -32,11 +32,9 @@ bottasso/
 │   │   └── bottasso/         # tema SDDM
 │   │       ├── bottasso.conf
 │   │       └── bottasso-logo.png
-│   ├── assets/
-│   │   └── logo/             # logotipo de la distro
-│   │       └── bottasso-logo.png
-│   └── conf/
-│       └── os-release.bottasso   # copiado de /etc/os-release
+│   └── assets/
+│       └── logo/             # logotipo de la distro
+│           └── bottasso-logo.png
 └── .gitignore
 ```
 

@@ -1,0 +1,2 @@
+[2026-11-12T14:15:27-0300] [PACMAN] Running 'pacman -b /home/jrd/Proyectos/bottasso/bottasso-iso/work/x86_64/airootfs//var/lib/pacman/ -r /home/jrd/Proyectos/bottasso/bottasso-iso/work/x86_64/airootfs -Sy --config=/tmp/pacman.conf.JqFN --disable-sandbox --noconfirm base linux-cachyos linux-cachyos-headers cachyos-keyring cachyos-settings ananicy-cpp scx-scheds proton-cachyos-native limine syslinux grub linux mkinitcpio-archiso arch-install-scripts openssh btrfs-progs xfsprogs e2fsprogs sddm'
+[2026-11-12T14:15:27-0300] [PACMAN] synchronizing package lists
