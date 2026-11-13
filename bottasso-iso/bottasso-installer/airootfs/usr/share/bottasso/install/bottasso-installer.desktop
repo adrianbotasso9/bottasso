@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=BOTASSO OS Installador
+Comment=Instalador grafico de BOTASSO OS
+Exec=python3 /usr/share/bottasso/install/bottasso-installer.py
+Terminal=false
+Categories=Utility;Installation;
+Keywords=instalador;distro;linux;
