@@ -1,10 +1,8 @@
 base
 linux-cachyos
-linux-cachyos-headers
 cachyos-keyring
 cachyos-settings
 ananicy-cpp
-scx-scheds
 proton-cachyos-native
 limine
 syslinux
