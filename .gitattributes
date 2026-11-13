@@ -1,1 +1,2 @@
-*.iso filter=lfs diff=lfs merge=lfs -text
+# ISO y EROFS son artefactos de compilación: no se LFS ni se rastrean.
+# (filter=lfs estaba en *.iso)

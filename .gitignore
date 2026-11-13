@@ -1,6 +1,16 @@
-# Build artifacts
+# Build artifacts (ISO, EROFS, directorios de compilación, artefactos mkarchiso)
 *.iso
 *.img
+*.mkisofs
+bottasso-iso/out
+bottasso-iso/out-installer
+bottasso-iso/work
+bottasso-iso/work-installer
+
+# Logs de compilación e intentos de subida
+bottasso-iso/build-installer.log
+push.log
+
 
 # Respaldos locales de rebrand (no versionar)
 *.bottasso.bak
