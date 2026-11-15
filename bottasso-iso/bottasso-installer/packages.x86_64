@@ -9,7 +9,6 @@ linux-cachyos
 cachyos-keyring
 cachyos-settings
 ananicy-cpp
-proton-cachyos-native
 limine
 syslinux
 grub
