@@ -26,4 +26,3 @@ plasma-desktop
 kdialog
 # Calamares installer framework (Qt6) - la versión new (next) es la que se usa
 cachyos-calamares-qt6-next-systemd
-cachyos-calamares-qt6-next-limine
