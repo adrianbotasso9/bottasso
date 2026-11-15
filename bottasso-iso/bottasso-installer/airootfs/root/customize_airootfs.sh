@@ -3,7 +3,13 @@
 #
 # customize_airootfs.sh — se ejecuta DENTRO del chroot de la live ISO de
 # BOTASSO OS, justo despues de pacstrap y antes de construir el ISO.
-# Hornea la rebrand y prepara el entorno grafico de instalacion.
+# Hornea la rebrand y prepara el entorno grafico de instalacion con Calamares.
+#
+# Cambios vs la version con PyQt6:
+#   - Elimina el instalador PyQt6 (python-pyqt6, bottasso-installer.*)
+#   - Añade el instalador Calamares (cachyos-calamares-qt6-*)
+#   - Configura el modulo de bootloader con Limine
+#   - Añade la sesion Calamares al autostart de Plasma
 
 set -euo pipefail
 
@@ -11,8 +17,6 @@ info(){ echo "[live] $*"; }
 
 # ---------------------------------------------------------------------------
 # 1) Horneo de la rebrand (os-release + tema SDDM + logo)
-#    Los ficheros-FUENTE ya estan en /usr/share/bottasso/ (plantilla
-#    profile/airootfs/ copiada a este directorio antes de esta etapa).
 # ---------------------------------------------------------------------------
 info "1/5 - Horneando rebrand..."
 cp /usr/share/bottasso/os-release/base /usr/lib/os-release
@@ -42,7 +46,6 @@ Session = plasma
 Session = plasma
 EOF
 
-# Asegurar objetivo grafico, y activar el gestor de sesiones
 ln -sfn /usr/lib/systemd/system/graphical.target \
         /etc/systemd/system/default.target
 systemctl enable sddm >/dev/null 2>&1 || true
@@ -56,19 +59,31 @@ ln -sfn /usr/share/zoneinfo/America/Santiago /etc/localtime
 echo 'LANG=C.UTF-8' > /etc/locale.conf
 
 # ---------------------------------------------------------------------------
-# 4) El instalador grafico PyQt6 (app + desktop + recursos)
+# 4) Instalador grafico: Calamares (Qt6)
 # ---------------------------------------------------------------------------
-info "4/5 - Instalando instalador grafico..."
-install -d -m 0755 /usr/share/bottasso/install
-install -d -m 0755 /usr/local/bin
+info "4/5 - Instalando instalador grafico Calamares..."
+
+# Ensure Calamares and its Qt6 modules are installed
+# (installed via packages.x86_64: cachyos-calamares + cachyos-calamares-qt6-*)
+
+# Create the live session launcher (Autostart for KDE)
 install -d -m 0755 /home/root/.config/autostart
 
-install -m 0755 /usr/share/bottasso/install/install-bottasso.sh \
-                   /usr/local/bin/install-bottasso.sh
-install -m 0644 /usr/share/bottasso/install/bottasso-installer.desktop \
-                   /home/root/.config/autostart/bottasso-installer.desktop
+cat > /home/root/.config/autostart/bottasso-calamares.desktop <<EOF
+[Desktop Entry]
+Type=Application
+Name=BOTASSO OS Installer
+Comment=BOTASSO OS Calamares installer
+Exec=calamares
+Icon=bottasso
+Terminal=false
+Categories=System;Installer;
+EOF
+
+# Copy the BOTASSO logo to the calamares resources path
+install -d -m 0755 /usr/share/calamares/resources/images
 install -m 0644 /usr/share/bottasso/assets/logo/bottasso-logo.png \
-                   /usr/share/icons/hicolor/64x64/apps/bottasso.png
+                   /usr/share/calamares/resources/images/bottasso-logo.png
 
 # ---------------------------------------------------------------------------
 # 5) Herramientas basicas de particionado / red
@@ -78,4 +93,4 @@ systemctl enable NetworkManager >/dev/null 2>&1 || true
 systemctl enable crond >/dev/null 2>&1 || true
 systemctl enable chronyd >/dev/null 2>&1 || true
 
-info "Ejecuta el instalador desde el escritorio KDE, o reinicia al binario."
+info "Terminado. Ejecuta calamares para instalar BOTASSO OS."

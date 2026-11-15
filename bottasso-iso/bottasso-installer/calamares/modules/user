@@ -1,0 +1,6 @@
+# User module
+- ID: user
+  Name: "Installation"
+  Description: "Create a user account"
+  Order: 50
+  InitialState: loaded

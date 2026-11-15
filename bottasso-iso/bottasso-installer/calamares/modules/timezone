@@ -1,0 +1,6 @@
+# Timezone module
+- ID: timezone
+  Name: "Installation"
+  Description: "Select your timezone"
+  Order: 40
+  InitialState: loaded

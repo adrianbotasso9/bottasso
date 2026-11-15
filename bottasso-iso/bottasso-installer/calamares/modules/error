@@ -1,0 +1,6 @@
+# Error module
+- ID: error
+  Name: "Error"
+  Description: "Display errors"
+  Order: 99
+  InitialState: loaded

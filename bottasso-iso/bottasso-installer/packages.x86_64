@@ -1,6 +1,8 @@
 # Paquetes del entorno grafico de instalacion de BOTASSO OS (ISO de arranque).
-# El entorno live es KDE Plasma 6; incluye el instalador grafico (PyQt6) y
-# los recursos de rebrand (os-release, tema SDDM, logo) en /usr/share/bottasso.
+# El entorno live es KDE Plasma 6; incluye el instalador grafico con Calamares
+# y los recursos de rebrand (os-release, tema SDDM, logo) en /usr/share/bottasso.
+#
+# Calamares: cachyos-calamares (base) + cachyos-calamares-qt6-* (modulos Qt6)
 
 base
 linux-cachyos
@@ -21,6 +23,7 @@ e2fsprogs
 sddm
 networkmanager
 plasma-desktop
-python
-python-pyqt6
 kdialog
+# Calamares installer framework (Qt6) - la versión new (next) es la que se usa
+cachyos-calamares-qt6-next-systemd
+cachyos-calamares-qt6-next-limine

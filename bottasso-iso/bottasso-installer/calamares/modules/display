@@ -1,0 +1,47 @@
+# Calamares display module configuration
+# Defines the installation wizard pages.
+
+- ID: display
+  Name: "Installation"
+  Description: "BOTASSO OS installer wizard"
+  Order: 10
+
+- ID: drivemap
+  Name: "Installation"
+  Description: "Map disks to devices"
+  Order: 20
+
+- ID: partitioning
+  Name: "Installation"
+  Description: "Partition disks"
+  Order: 30
+
+- ID: timezone
+  Name: "Installation"
+  Description: "Select timezone"
+  Order: 40
+
+- ID: user
+  Name: "Installation"
+  Description: "Create user account"
+  Order: 50
+
+- ID: desktop
+  Name: "Installation"
+  Description: "Select desktop environment"
+  Order: 60
+
+- ID: boot
+  Name: "Installation"
+  Description: "Configure bootloader"
+  Order: 70
+
+- ID: error
+  Name: "Error"
+  Description: "Display errors"
+  Order: 99
+
+- ID: userinit
+  Name: "Completion"
+  Description: "Finish installation"
+  Order: 100

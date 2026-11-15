@@ -1,0 +1,6 @@
+# Partitioning module
+- ID: partitioning
+  Name: "Installation"
+  Description: "Partition disks"
+  Order: 30
+  InitialState: loaded

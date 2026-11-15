@@ -1,0 +1,6 @@
+# Drive map module
+- ID: drivemap
+  Name: "Installation"
+  Description: "Map found drives"
+  Order: 20
+  InitialState: loaded

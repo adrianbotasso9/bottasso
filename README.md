@@ -25,11 +25,12 @@ bottasso/
 │   └── workflows/
 │       └── ci.yml                  # CI de comprobación (GitHub Actions)
 ├── bottasso-iso/
-│   ├── bottasso-installer/         # 🟦 Perfil de instalación (KDE Plasma 6 + PyQt6)
+│   ├── bottasso-installer/         # 🟦 Perfil de instalación (KDE Plasma 6 + Calamares)
 │   │   ├── profiledef.sh
 │   │   ├── pacman.conf
 │   │   ├── packages.x86_64
 │   │   ├── airootfs/               # chroot con instalador + rebrand
+│   │   ├── calamares/              # Configuración de Calamares (modules, settings, resources)
 │   │   └── efiboot/grub/syslinux/  # arranque
 │   ├── bottasso/                   # 🟨 Perfil base CachyOS (fuente)
 │   │   ├── airootfs/ ...

@@ -1,0 +1,6 @@
+# Desktop selection module
+- ID: desktop
+  Name: "Installation"
+  Description: "Select desktop environment"
+  Order: 60
+  InitialState: loaded

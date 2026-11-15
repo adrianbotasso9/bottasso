@@ -1,0 +1,6 @@
+# User initialization module
+- ID: userinit
+  Name: "Completion"
+  Description: "Installation complete"
+  Order: 100
+  InitialState: loaded

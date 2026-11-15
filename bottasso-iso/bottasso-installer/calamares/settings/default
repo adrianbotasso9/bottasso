@@ -1,0 +1,53 @@
+# Calamares settings for BOTASSO OS Installer
+# This file configures the installer interface and module loading.
+
+- SettingsVersion: 1
+
+# Languages supported by the installer
+- Language:
+  - C
+  - en_US
+  - es_CL
+  - es
+
+# Home page for the distribution
+- HomePage: https://bottasso.dev/
+
+# Module dependencies (must be loaded in this order)
+- Dependencies:
+  - partition
+  - drivemap
+  - timezone
+  - user
+  - desktop
+  - boot
+
+# XURS API configuration
+- XURS:
+  - API: 2
+  - Default:
+      WidgetPath: /usr/share/calamares/widgets
+
+# Module and resource paths (installed files)
+- ModulePath: /usr/lib/calamares/modules
+  ResourcePath: /usr/share/calamares/resources
+  SettingsPath: /usr/share/calamares/settings
+
+# Distribution metadata
+- Distribution:
+  - Name: "BOTASSO OS"
+    ID: bottasso
+    Version: "2026.11.12"
+    Icon: /usr/share/calamares/resources/images/bottasso-logo.png
+    Publisher: "BOTASSO OS"
+    License: "MIT"
+
+# Error module configuration
+- Err:
+  - Path: /usr/share/calamares/modules/error
+    ErrorFile: error
+
+# Display module configuration
+- Display:
+  - Path: /usr/share/calamares/modules/display
+    DisplayFile: display

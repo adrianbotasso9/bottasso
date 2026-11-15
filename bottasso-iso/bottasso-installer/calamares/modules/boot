@@ -1,0 +1,11 @@
+# Bootloader module
+- ID: boot
+  Name: "Installation"
+  Description: "Configure bootloader"
+  Order: 70
+  InitialState: loaded
+  DefaultState: default
+  States:
+    default:
+      Description: ""
+      Page: bootloader

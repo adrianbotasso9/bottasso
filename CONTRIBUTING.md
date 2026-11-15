@@ -10,7 +10,7 @@ un ISO con el entorno de instalación gráfico.
 | Directorio | Contenido |
 |---|---|
 | `src/` | Recursos de configuración y rebrand extraíbles (`os-release`, temas SDDM, logo) |
-| `bottasso-iso/bottasso-installer/` | 🟦 **Perfil de instalación** (KDE Plasma 6, SDDM, instalador PyQt6 + script de instalación) |
+| `bottasso-iso/bottasso-installer/` | 🟦 **Perfil de instalación** (KDE Plasma 6, SDDM, instalador Calamares + script de instalación) |
 | `bottasso-iso/bottasso/` | 🟨 Perfil **base CachyOS** usado como punto de partida |
 | `BUILD.md`, `README.md`, `LICENSE` | Documentación, construcción e información del proyecto |
 | `.github/workflows/ci.yml` | CI de comprobación (GitHub Actions) |
@@ -43,7 +43,6 @@ está en `src/` o el perfil de instalación, se subirá normalmente.
    * `scripts/`
 5. **Comprueba** antes de subir:
    * `bash -n scripts/rebrand.sh`
-   * `python3 -m py_compile bottasso-iso/bottasso-installer/airootfs/usr/share/bottasso/install/bottasso-installer.py`
    * Revisa los cambios con `git status` y `git diff`.
 6. **Commitea** y envía un **Pull Request** a `main`.
    * Usa un mensaje de commit en español (o en inglés) y describe qué hace.
