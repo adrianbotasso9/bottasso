@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donaciones - BOTASSO OS</title>
+<style>
+:root {
+  --blue: #2582DC;
+  --blue-dark: #1E6CC0;
+  --bg: #f8f9fa;
+  --card: #ffffff;
+  --text: #333333;
+  --muted: #6c757d;
+  --border: #dee2e6;
+}
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: var(--text);
+}
+header {
+  text-align: center;
+  padding: 2rem 0;
+}
+.logo {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--blue);
+}
+header h1 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+header p {
+  color: var(--muted);
+}
+section {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+h2 {
+  color: var(--blue-dark);
+  margin-top: 0;
+}
+.plataformas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+.plataforma {
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+.plataforma a {
+  text-decoration: none;
+  color: var(--blue-dark);
+  font-weight: 600;
+}
+.plataforma .btn {
+  display: inline-block;
+  background: var(--blue);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+.plataforma .btn:hover {
+  background: var(--blue-dark);
+}
+.mp-widget {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+.mp-btn {
+  display: inline-block;
+  background: var(--blue);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+.mp-btn:hover {
+  background: var(--blue-dark);
+}
+.footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 1rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.note {
+  background: #fff3cd;
+  border: 1px solid #ffc107;
+  color: #856404;
+  padding: 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  margin: 1rem 0;
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">BOTASSO</div>
+  <h1>Donaciones y Soporte</h1>
+  <p>Si BOTASSO OS te ha sido útil, puedes apoyar el proyecto</p>
+</header>
+
+<section>
+  <h2>Métodos de donación</h2>
+  <div class="plataformas">
+    <div class="plataforma">
+      <a href="https://github.com/sponsors/adrianbotasso9">GitHub Sponsors</a>
+      <div class="btn">Donar 🔍</div>
+    </div>
+    <div class="plataforma">
+      <a href="https://ko-fi.com/bottassoos">Ko-fi</a>
+      <div class="btn">Donar 🔍</div>
+    </div>
+    <div class="plataforma">
+      <a href="https://paypal.me/bottassoos">PayPal</a>
+      <div class="btn">Donar 🔍</div>
+    </div>
+    <div class="plataforma">
+      <a href="https://opencollective.com/bottassoos">Open Collective</a>
+      <div class="btn">Donar 🔍</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Pago seguro (Mercado Pago)</h2>
+  <div class="mp-widget">
+    <!-- Sustituir YOUR_ACCESS_TOKEN por tu token de Mercado Pago -->
+    <script src="https://www.mercadopago.com.ar/integrations/v1/web-token/public/javascript/sdk/v1/mercadopago.js"></script>
+    <script>
+      var mp = new MercadoPago('YOUR_ACCESS_TOKEN', {
+        locale: 'es-AR',
+        currency: 'ARS'
+      });
+      mp.checkout({
+        preference: {
+          id: 'YOUR_PREFERENCE_ID',
+          title: 'Donación BOTASSO OS',
+          description: 'Apoya el proyecto BOTASSO OS',
+          quantity: 1,
+          unit_price: 1000,
+          currency_id: 'ARS'
+        },
+        callbacks: {
+          onReady: function() {
+            mp.render('mp-widget');
+          },
+          onPaymentDone: function(payment) {
+            alert('¡Gracias por tu donación!');
+            console.log('Pago completado:', payment);
+          }
+        }
+      });
+    </script>
+    <div id="mp-widget" style="margin: 1rem auto; width: 100%; max-width: 400px;"></div>
+    <script>
+      // Render button by default
+      mp.checkout({
+        preference: {
+          id: 'YOUR_PREFERENCE_ID',
+          title: 'Donación BOTASSO OS',
+          description: 'Apoya el proyecto BOTASSO OS',
+          quantity: 1,
+          unit_price: 1000,
+          currency_id: 'ARS'
+        },
+        callbacks: {
+          onReady: function() {
+            document.getElementById('mp-widget').innerHTML = '';
+          },
+          onPaymentDone: function(payment) {
+            alert('¡Gracias por tu donación!');
+          }
+        }
+      });
+    </script>
+  </div>
+  <p class="note">
+    <strong>Notas:</strong>
+    <ul>
+      <li>Reemplaza <code>YOUR_ACCESS_TOKEN</code> con tu token de Mercado Pago</li>
+      <li>Crea una preferencia en tu panel de Mercado Pago</li>
+      <li>La cantidad es en pesos argentinos (ARS)</li>
+    </ul>
+  </p>
+</section>
+
+<section>
+  <h2>Soporte</h2>
+  <p>¿Necesitás ayuda?</p>
+  <ul>
+    <li>Foro: https://github.com/adrianbotasso9/bottasso/discussions</li>
+    <li>Issues: https://github.com/adrianbotasso9/bottasso/issues</li>
+    <li>Soporte prioritario: contactarnos para un contrato</li>
+  </ul>
+</section>
+
+<footer>
+  <p>&copy; 2026 BOTASSO OS — MIT License</p>
+</footer>
+</body>
+</html>

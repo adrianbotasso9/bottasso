@@ -1,40 +1,38 @@
-# Donaciones y Soporte - BOTASSO OS
+# Métodos de donación
 
-Agradezco tu interés en BOTASSO OS. Si el proyecto te ha servido, puedes contribuir de las siguientes formas:
+Las donaciones ayudan a mantener el proyecto, pagar servidores, tiempo de
+compilación de ISO y desarrollo.
 
-## 💳 Donaciones
-
-Las donaciones ayudan a mantener el proyecto, pagar servidores, tiempo de compilación y desarrollo.
-
-| Plataforma | Enlace | Comentario |
+| Método | Enlace | Comentario |
 |---|---|---|
-| **GitHub Sponsors** | [github.com/sponsors/adrianbotasso9](https://github.com/sponsors/adrianbotasso9) | Recomendada (área de retiro), monedas, mensual/uno-time |
+| **GitHub Sponsors** | [github.com/sponsors/adrianbotasso9](https://github.com/sponsors/adrianbotasso9) | Recomendado (área de retiro, monedas, mensual/un-time) |
 | **Ko-fi** | [ko-fi.com/bottassoos](https://ko-fi.com/bottassoos) | Barra de donación, botón "gracias" |
 | **Open Collective** | [opencollective.com/bottassoos](https://opencollective.com/bottassoos) | Tránsito público, contabilidad transparente |
+| **Mercado Pago** | `[web]/donaciones.html` | Pago seguro (voucher), recibe en tu cuenta BCI |
 | **PayPal** | [paypal.me/bottassoos](https://paypal.me/bottassoos) | Donaciones únicas, monedas |
 
-> 💡 **Recomendado:** GitHub Sponsors por su integración nativa con GitHub y retiros automáticos.
+> 💡 **Recomendado:** GitHub Sponsors + Mercado Pago.
 
-## 🙋 Soporte
+## Soporte
 
 Si necesitás ayuda con BOTASSO OS:
 
 - **Foro / Discusiones:** https://github.com/adrianbotasso9/bottasso/discussions
 - **Issues:** https://github.com/adrianbotasso9/bottasso/issues
-- **Wiki:** https://wiki.bottasso.dev/ (después de la documentación)
+- **Wiki:** https://wiki.bottasso.dev/
 
-Si necesitás soporte prioritario (empresa, equipo, instalación crítica), podés contactarnos para un contrato de soporte.
+Si necesitás soporte prioritario (empresa, equipo, instalación crítica),
+podés contactarnos para un contrato de soporte.
 
-## 🤝 Colaboraciones
+## Colaboraciones
 
 - **Traducciones:** https://crowdin.com/project/bottassoos
 - **Documentación:** [CONTRIBUTING.md](CONTRIBUTING.md)
 - **Código:** Fork y Pull Request
 
-## 📊 Estado financiero
+## Financiamiento
 
-Ver: [FINANCING.md](FINANCING.md) (si existe, o crear uno)
+Ver: [FINANCING.md](FINANCING.md)
 
 ---
-
 Hecho con ❤️ y mucho café.
