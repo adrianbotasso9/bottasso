@@ -10,6 +10,8 @@ compilación de ISO y desarrollo.
 | **Open Collective** | [opencollective.com/bottassoos](https://opencollective.com/bottassoos) | Tránsito público, contabilidad transparente |
 | **Mercado Pago** | `[web]/donaciones.html` | Pago seguro (voucher), recibe en tu cuenta BCI |
 | **PayPal** | [paypal.me/bottassoos](https://paypal.me/bottassoos) | Donaciones únicas, monedas |
+| **BCI (transferencia directa)** | No permitido por seguridad | No almacenamos datos bancarios; usa una pasarela |
+| **BCI (transferencia directa)** | No permitido por seguridad | No almacenamos datos bancarios; usa una pasarela |
 
 > 💡 **Recomendado:** GitHub Sponsors + Mercado Pago.
 
