@@ -1,0 +1,175 @@
+[mkarchiso] INFO: Validating options...
+[mkarchiso] INFO: Validating 'bios.syslinux': 'memtest86+' is not in the package list. Memmory testing will not be available from syslinux.
+[mkarchiso] INFO: 'edk2-shell' is not in the package list. The ISO will not contain a bootable UEFI shell.
+[mkarchiso] INFO: Validating 'uefi.grub': 'memtest86+-efi' is not in the package list. Memory testing will not be available from the UEFI boot loader.
+[mkarchiso] INFO: Done!
+[mkarchiso] INFO: mkarchiso configuration settings
+[mkarchiso] INFO:              Architecture:   x86_64
+[mkarchiso] INFO:         Working directory:   /home/jrd/Proyectos/bottasso/bottasso-iso/work-installer
+[mkarchiso] INFO:    Installation directory:   arch
+[mkarchiso] INFO:                Build date:   2026-11-15T11:05-0300
+[mkarchiso] INFO:          Output directory:   /home/jrd/Proyectos/bottasso/bottasso-iso/out-installer
+[mkarchiso] INFO:        Current build mode:   iso
+[mkarchiso] INFO:               Build modes:   iso
+[mkarchiso] INFO:                   GPG key:   None
+[mkarchiso] INFO:                GPG signer:   None
+[mkarchiso] INFO: Code signing certificates:   None
+[mkarchiso] INFO:                   Profile:   /home/jrd/Proyectos/bottasso/bottasso-iso/bottasso-installer
+[mkarchiso] INFO: Pacman configuration file:   /home/jrd/Proyectos/bottasso/bottasso-iso/bottasso-installer/pacman.conf
+[mkarchiso] INFO:           Image file name:   bottasso-installer-2026.11.12-x86_64.iso
+[mkarchiso] INFO:          ISO volume label:   BOTASSO INSTALLER
+[mkarchiso] INFO:             ISO publisher:   BOTASSO OS
+[mkarchiso] INFO:           ISO application:   BOTASSO OS Installer
+[mkarchiso] INFO:                Boot modes:   bios.syslinux uefi.grub
+[mkarchiso] INFO:             Packages File:   /home/jrd/Proyectos/bottasso/bottasso-iso/bottasso-installer/packages.x86_64
+[mkarchiso] INFO:                  Packages:   base linux-cachyos cachyos-keyring cachyos-settings ananicy-cpp proton-cachyos-native limine syslinux grub linux mkinitcpio-archiso arch-install-scripts openssh btrfs-progs xfsprogs e2fsprogs sddm networkmanager plasma-desktop kdialog cachyos-calamares cachyos-calamares-qt6-next-systemd cachyos-calamares-qt6-next-limine
+[mkarchiso] INFO: Copying custom pacman.conf to work directory...
+[mkarchiso] INFO: Using pacman CacheDir: /var/cache/pacman/pkg/ 
+[mkarchiso] INFO: Copying custom airootfs files...
+[mkarchiso] INFO: Done!
+[mkarchiso] INFO: Installing packages to '/home/jrd/Proyectos/bottasso/bottasso-iso/work-installer/x86_64/airootfs/'...
+==> Creating install root at /home/jrd/Proyectos/bottasso/bottasso-iso/work-installer/x86_64/airootfs
+==> Installing packages to /home/jrd/Proyectos/bottasso/bottasso-iso/work-installer/x86_64/airootfs
+:: Synchronizing package databases...
+ core downloading...
+ extra downloading...
+ multilib downloading...
+ cachyos downloading...
+ cachyos-core-v3 downloading...
+ cachyos-v3 downloading...
+ cachyos-extra-v3 downloading...
+resolving dependencies...
+:: There are 2 providers available for libncursesw.so=6-64:
+:: Repository core
+   1) ncurses
+:: Repository cachyos-core-v3
+   2) ncurses
+
+Enter a number (default=1): 
+:: There are 2 providers available for libverto-module-base:
+:: Repository core
+   1) libverto
+:: Repository cachyos-core-v3
+   2) libverto
+
+Enter a number (default=1): 
+:: There are 2 providers available for libcrypt.so=2-64:
+:: Repository core
+   1) libxcrypt
+:: Repository cachyos-core-v3
+   2) libxcrypt
+
+Enter a number (default=1): 
+:: There are 4 providers available for libxtables.so=12-64:
+:: Repository core
+   1) iptables  2) iptables-legacy
+:: Repository cachyos-core-v3
+   3) iptables  4) iptables-legacy
+
+Enter a number (default=1): 
+:: There are 3 providers available for initramfs:
+:: Repository core
+   1) mkinitcpio
+:: Repository extra
+   2) booster  3) dracut
+
+Enter a number (default=1): 
+:: There are 2 providers available for libfmt.so=12-64:
+:: Repository extra
+   1) fmt
+:: Repository cachyos-extra-v3
+   2) fmt
+
+Enter a number (default=1): 
+:: There are 2 providers available for libspdlog.so=1.17-64:
+:: Repository extra
+   1) spdlog
+:: Repository cachyos-extra-v3
+   2) spdlog
+
+Enter a number (default=1): 
+:: There are 2 providers available for atk:
+:: Repository extra
+   1) at-spi2-core
+:: Repository cachyos-extra-v3
+   2) at-spi2-core
+
+Enter a number (default=1): 
+:: There are 2 providers available for libgl:
+:: Repository extra
+   1) libglvnd
+:: Repository cachyos-extra-v3
+   2) libglvnd
+
+Enter a number (default=1): 
+:: There are 2 providers available for libltdl:
+:: Repository core
+   1) libtool
+:: Repository cachyos-v3
+   2) libtool
+
+Enter a number (default=1): 
+:: There are 44 providers available for vulkan-driver:
+:: Repository extra
+   1) nvidia-utils  2) vulkan-asahi  3) vulkan-broadcom  4) vulkan-dzn  5) vulkan-freedreno  6) vulkan-gfxstream  7) vulkan-intel  8) vulkan-nouveau  9) vulkan-panfrost  10) vulkan-powervr  11) vulkan-radeon  12) vulkan-swrast  13) vulkan-virtio
+:: Repository cachyos
+   14) nvidia-390xx-utils  15) nvidia-470xx-utils  16) nvidia-580xx-utils  17) nvidia-utils  18) vulkan-asahi  19) vulkan-broadcom  20) vulkan-dzn  21) vulkan-freedreno  22) vulkan-gfxstream  23) vulkan-intel  24) vulkan-kosmickrisp  25) vulkan-nouveau  26) vulkan-panfrost  27) vulkan-powervr  28) vulkan-radeon  29) vulkan-swrast  30) vulkan-virtio
+:: Repository cachyos-v3
+   31) mesa-git  32) nvidia-utils  33) vulkan-asahi  34) vulkan-broadcom  35) vulkan-dzn  36) vulkan-freedreno  37) vulkan-gfxstream  38) vulkan-intel  39) vulkan-nouveau  40) vulkan-panfrost  41) vulkan-powervr  42) vulkan-radeon  43) vulkan-swrast  44) vulkan-virtio
+
+Enter a number (default=1): 
+:: There are 11 providers available for ttf-font:
+:: Repository extra
+   1) gnu-free-fonts  2) noto-fonts  3) ttf-bitstream-vera  4) ttf-croscore  5) ttf-dejavu  6) ttf-droid  7) ttf-ibm-plex  8) ttf-input  9) ttf-input-nerd  10) ttf-liberation  11) ttf-roboto
+
+Enter a number (default=1): 
+:: There are 3 providers available for jack:
+:: Repository extra
+   1) jack2  2) pipewire-jack
+:: Repository cachyos-extra-v3
+   3) jack2
+
+Enter a number (default=1): 
+:: There are 2 providers available for onevpl:
+:: Repository extra
+   1) libvpl
+:: Repository cachyos-extra-v3
+   2) libvpl
+
+Enter a number (default=1): 
+:: There are 2 providers available for libzimg.so=2-64:
+:: Repository extra
+   1) zimg
+:: Repository cachyos-extra-v3
+   2) zimg
+
+Enter a number (default=1): 
+:: There are 2 providers available for liblsmash.so=2-64:
+:: Repository extra
+   1) l-smash
+:: Repository cachyos-extra-v3
+   2) l-smash
+
+Enter a number (default=1): 
+:: There are 4 providers available for qt6-multimedia-backend:
+:: Repository extra
+   1) qt6-multimedia-ffmpeg  2) qt6-multimedia-gstreamer
+:: Repository cachyos-extra-v3
+   3) qt6-multimedia-ffmpeg  4) qt6-multimedia-gstreamer
+
+Enter a number (default=1): 
+:: There are 2 providers available for libtevent.so=0-64:
+:: Repository extra
+   1) tevent
+:: Repository cachyos-extra-v3
+   2) tevent
+
+Enter a number (default=1): 
+looking for conflicting packages...
+error: unresolvable package conflicts detected
+error: failed to prepare transaction (conflicting dependencies)
+:: cachyos-calamares-3.4.2-4 and cachyos-calamares-qt6-next-systemd-3.4.1-2 are in conflict
+==> ERROR: Failed to install packages to new root
+[mkarchiso] INFO: Done! Packages installed successfully.
+[mkarchiso] INFO: Creating version files...
+touch: cannot touch '/home/jrd/Proyectos/bottasso/bottasso-iso/work-installer/x86_64/airootfs/usr/lib/clock-epoch': No such file or directory

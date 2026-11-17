@@ -1,0 +1,27 @@
+[mkarchiso] INFO: Validating options...
+[mkarchiso] INFO: Validating 'bios.syslinux': 'memtest86+' is not in the package list. Memmory testing will not be available from syslinux.
+[mkarchiso] INFO: 'edk2-shell' is not in the package list. The ISO will not contain a bootable UEFI shell.
+[mkarchiso] INFO: Validating 'uefi.grub': 'memtest86+-efi' is not in the package list. Memory testing will not be available from the UEFI boot loader.
+[mkarchiso] INFO: Done!
+[mkarchiso] INFO: mkarchiso configuration settings
+[mkarchiso] INFO:              Architecture:   x86_64
+[mkarchiso] INFO:         Working directory:   /home/jrd/Proyectos/bottasso/bottasso-iso/work-installer
+[mkarchiso] INFO:    Installation directory:   arch
+[mkarchiso] INFO:                Build date:   2026-11-15T11:05-0300
+[mkarchiso] INFO:          Output directory:   /home/jrd/Proyectos/bottasso/bottasso-iso/out-installer
+[mkarchiso] INFO:        Current build mode:   iso
+[mkarchiso] INFO:               Build modes:   iso
+[mkarchiso] INFO:                   GPG key:   None
+[mkarchiso] INFO:                GPG signer:   None
+[mkarchiso] INFO: Code signing certificates:   None
+[mkarchiso] INFO:                   Profile:   /home/jrd/Proyectos/bottasso/bottasso-iso/bottasso-installer
+[mkarchiso] INFO: Pacman configuration file:   /home/jrd/Proyectos/bottasso/bottasso-iso/bottasso-installer/pacman.conf
+[mkarchiso] INFO:           Image file name:   bottasso-installer-2026.11.12-x86_64.iso
+[mkarchiso] INFO:          ISO volume label:   BOTASSO INSTALLER
+[mkarchiso] INFO:             ISO publisher:   BOTASSO OS
+[mkarchiso] INFO:           ISO application:   BOTASSO OS Installer
+[mkarchiso] INFO:                Boot modes:   bios.syslinux uefi.grub
+[mkarchiso] INFO:             Packages File:   /home/jrd/Proyectos/bottasso/bottasso-iso/bottasso-installer/packages.x86_64
+[mkarchiso] INFO:                  Packages:   base linux-cachyos cachyos-keyring cachyos-settings ananicy-cpp proton-cachyos-native limine syslinux grub linux mkinitcpio-archiso arch-install-scripts openssh btrfs-progs xfsprogs e2fsprogs sddm networkmanager plasma-desktop kdialog cachyos-calamares-qt6-next-systemd cachyos-calamares-qt6-next-limine
+[mkarchiso] INFO: Creating version files...
+touch: cannot touch '/home/jrd/Proyectos/bottasso/bottasso-iso/work-installer/x86_64/airootfs/usr/lib/clock-epoch': No such file or directory

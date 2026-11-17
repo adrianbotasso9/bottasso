@@ -1,0 +1,135 @@
+[mkarchiso] INFO: Validating options...
+[mkarchiso] INFO: Validating 'bios.syslinux': 'memtest86+' is not in the package list. Memmory testing will not be available from syslinux.
+[mkarchiso] INFO: 'edk2-shell' is not in the package list. The ISO will not contain a bootable UEFI shell.
+[mkarchiso] INFO: Validating 'uefi.grub': 'memtest86+-efi' is not in the package list. Memory testing will not be available from the UEFI boot loader.
+[mkarchiso] INFO: Done!
+[mkarchiso] INFO: mkarchiso configuration settings
+[mkarchiso] INFO:              Architecture:   x86_64
+[mkarchiso] INFO:         Working directory:   /home/jrd/Proyectos/bottasso/bottasso-iso/work-build
+[mkarchiso] INFO:    Installation directory:   arch
+[mkarchiso] INFO:                Build date:   2026-11-15T10:47-0300
+[mkarchiso] INFO:          Output directory:   /home/jrd/Proyectos/bottasso/bottasso-iso/out
+[mkarchiso] INFO:        Current build mode:   iso
+[mkarchiso] INFO:               Build modes:   iso
+[mkarchiso] INFO:                   GPG key:   None
+[mkarchiso] INFO:                GPG signer:   None
+[mkarchiso] INFO: Code signing certificates:   None
+[mkarchiso] INFO:                   Profile:   /home/jrd/Proyectos/bottasso/bottasso-iso/bottasso
+[mkarchiso] INFO: Pacman configuration file:   /home/jrd/Proyectos/bottasso/bottasso-iso/bottasso/pacman.conf
+[mkarchiso] INFO:           Image file name:   bottasso-2026.11.12-x86_64.iso
+[mkarchiso] INFO:          ISO volume label:   BOTASSO OS
+[mkarchiso] INFO:             ISO publisher:   BOTASSO OS
+[mkarchiso] INFO:           ISO application:   BOTASSO OS
+[mkarchiso] INFO:                Boot modes:   bios.syslinux uefi.grub
+[mkarchiso] INFO:             Packages File:   /home/jrd/Proyectos/bottasso/bottasso-iso/bottasso/packages.x86_64
+[mkarchiso] INFO:                  Packages:   base linux-cachyos cachyos-keyring cachyos-settings ananicy-cpp proton-cachyos-native limine syslinux grub linux mkinitcpio-archiso arch-install-scripts openssh btrfs-progs xfsprogs e2fsprogs sddm
+[mkarchiso] INFO: Copying custom pacman.conf to work directory...
+[mkarchiso] INFO: Using pacman CacheDir: /var/cache/pacman/pkg/ 
+[mkarchiso] INFO: Copying custom airootfs files...
+[mkarchiso] INFO: Done!
+[mkarchiso] INFO: Installing packages to '/home/jrd/Proyectos/bottasso/bottasso-iso/work-build/x86_64/airootfs/'...
+==> Creating install root at /home/jrd/Proyectos/bottasso/bottasso-iso/work-build/x86_64/airootfs
+==> Installing packages to /home/jrd/Proyectos/bottasso/bottasso-iso/work-build/x86_64/airootfs
+:: Synchronizing package databases...
+ core downloading...
+ extra downloading...
+ multilib downloading...
+ cachyos downloading...
+ cachyos-core-v3 downloading...
+ cachyos-v3 downloading...
+ cachyos-extra-v3 downloading...
+resolving dependencies...
+:: There are 2 providers available for libncursesw.so=6-64:
+:: Repository core
+   1) ncurses
+:: Repository cachyos-core-v3
+   2) ncurses
+
+Enter a number (default=1): 
+:: There are 2 providers available for libverto-module-base:
+:: Repository core
+   1) libverto
+:: Repository cachyos-core-v3
+   2) libverto
+
+Enter a number (default=1): 
+:: There are 2 providers available for libcrypt.so=2-64:
+:: Repository core
+   1) libxcrypt
+:: Repository cachyos-core-v3
+   2) libxcrypt
+
+Enter a number (default=1): 
+:: There are 4 providers available for libxtables.so=12-64:
+:: Repository core
+   1) iptables  2) iptables-legacy
+:: Repository cachyos-core-v3
+   3) iptables  4) iptables-legacy
+
+Enter a number (default=1): 
+:: There are 3 providers available for initramfs:
+:: Repository core
+   1) mkinitcpio
+:: Repository extra
+   2) booster  3) dracut
+
+Enter a number (default=1): 
+:: There are 2 providers available for libfmt.so=12-64:
+:: Repository extra
+   1) fmt
+:: Repository cachyos-extra-v3
+   2) fmt
+
+Enter a number (default=1): 
+:: There are 2 providers available for libspdlog.so=1.17-64:
+:: Repository extra
+   1) spdlog
+:: Repository cachyos-extra-v3
+   2) spdlog
+
+Enter a number (default=1): 
+:: There are 2 providers available for atk:
+:: Repository extra
+   1) at-spi2-core
+:: Repository cachyos-extra-v3
+   2) at-spi2-core
+
+Enter a number (default=1): 
+:: There are 2 providers available for libgl:
+:: Repository extra
+   1) libglvnd
+:: Repository cachyos-extra-v3
+   2) libglvnd
+
+Enter a number (default=1): 
+:: There are 2 providers available for libltdl:
+:: Repository core
+   1) libtool
+:: Repository cachyos-v3
+   2) libtool
+
+Enter a number (default=1): 
+:: There are 44 providers available for vulkan-driver:
+:: Repository extra
+   1) nvidia-utils  2) vulkan-asahi  3) vulkan-broadcom  4) vulkan-dzn  5) vulkan-freedreno  6) vulkan-gfxstream  7) vulkan-intel  8) vulkan-nouveau  9) vulkan-panfrost  10) vulkan-powervr  11) vulkan-radeon  12) vulkan-swrast  13) vulkan-virtio
+:: Repository cachyos
+   14) nvidia-390xx-utils  15) nvidia-470xx-utils  16) nvidia-580xx-utils  17) nvidia-utils  18) vulkan-asahi  19) vulkan-broadcom  20) vulkan-dzn  21) vulkan-freedreno  22) vulkan-gfxstream  23) vulkan-intel  24) vulkan-kosmickrisp  25) vulkan-nouveau  26) vulkan-panfrost  27) vulkan-powervr  28) vulkan-radeon  29) vulkan-swrast  30) vulkan-virtio
+:: Repository cachyos-v3
+   31) mesa-git  32) nvidia-utils  33) vulkan-asahi  34) vulkan-broadcom  35) vulkan-dzn  36) vulkan-freedreno  37) vulkan-gfxstream  38) vulkan-intel  39) vulkan-nouveau  40) vulkan-panfrost  41) vulkan-powervr  42) vulkan-radeon  43) vulkan-swrast  44) vulkan-virtio
+
+Enter a number (default=1): 
+:: There are 11 providers available for ttf-font:
+:: Repository extra
+   1) gnu-free-fonts  2) noto-fonts  3) ttf-bitstream-vera  4) ttf-croscore  5) ttf-dejavu  6) ttf-droid  7) ttf-ibm-plex  8) ttf-input  9) ttf-input-nerd  10) ttf-liberation  11) ttf-roboto
+
+Enter a number (default=1): 
+looking for conflicting packages...
+
+Packages (327) acl-2.4.0-1  adwaita-fonts-51.0-2  alsa-lib-1.2.16.1-1  alsa-topology-conf-1.2.5.1-4  alsa-ucm-conf-1.2.16.1-1  archlinux-keyring-20260909-1  at-spi2-core-2.62.1-1  attr-2.6.0-1  audit-4.2.1-1  avahi-1:0.9rc5-2  bash-5.3.20-1  binutils-2.47-4  brotli-1.2.1-1  bubblewrap-0.13.1-1  bzip2-1.0.8-6  ca-certificates-20240618-1  ca-certificates-mozilla-3.133-1  ca-certificates-utils-20240618-1  cabextract-1.11-3  cachyos-ananicy-rules-1:1.1.49-1  cairo-1.18.6-1  coreutils-9.12-3  cryptsetup-2.8.8-2  curl-8.23.0-2  dav1d-1.5.4-1  db5.3-5.3.28-7  dbus-1.16.4-1  dbus-broker-37-3  dbus-broker-units-37-3  dbus-glib-0.116-1  dbus-units-37-3  dconf-51.0-1  default-cursors-3-1  desktop-file-utils-0.29-1  device-mapper-2.03.44-1  diffutils-3.12-2  double-conversion-3.4.0-1  duktape-2.7.0-7  egl-gbm-1.1.4-1  egl-wayland-4:1.1.24-1  egl-wayland2-1.0.2-1  egl-x11-1.0.6-1  eglexternalplatform-1.2.1-1  expat-2.10.0-1  file-5.48-1  filesystem-2025.10.12-1  findutils-4.11.0-1  flac-1.5.0-1  fmt-12.2.0-1  fontconfig-2:2.18.3-2  freeglut-3.8.0-1  freetype2-2.15.0-1  fribidi-1.0.18-1  gawk-5.4.1-1  gcc-libs-16.2.1+r23+gd564253eb6c8-1  gdbm-1.26-2  gdk-pixbuf2-2.44.8-1  gettext-1.0-2  giflib-6.1.3-2  glib2-2.90.1-1  glibc-2.44+r50+g1848099f063e-1  glu-9.0.3-3  glycin-2.2.6-1  gmp-6.3.0-3  gnu-free-fonts-20120503-9  gnulib-l10n-20241231-1  gnupg-2.4.9-4  gnutls-3.8.13-3  gperftools-2.19.3-1  gpgme-2.2.0-1  graphite-1:1.3.15-1  grep-3.12-2  gsettings-desktop-schemas-51.0-1  gsettings-system-schemas-51.0-1  gtest-1.18.0-1  gzip-1.15-1  harfbuzz-15.1.0-1  hidapi-0.15.0-1  highway-1.4.0-1  hwdata-0.412-1  iana-etc-20260617-1  icu-78.3-1  imlib2-1.12.7-3  inxi-3.3.41.1-2  iproute2-7.3.0-1  iptables-1:1.8.13-1  iputils-20250605-1  iw-6.17-1  jansson-2.15.1-1  jbigkit-2.2-1  json-c-0.19-1  kbd-2.10.0-1  keyutils-1.6.3-4  kmod-34.3-2  krb5-1.22.2-2  lame-4.0-1  lcms2-2.20-1  leancrypto-1.9.1-1  libarchive-3.8.11-2  libasan-16.2.1+r23+gd564253eb6c8-1  libassuan-3.0.0-1  libasyncns-1:0.8+r3+g68cd5af-3  libatomic-16.2.1+r23+gd564253eb6c8-1  libb2-0.98.1-3  libbpf-1.8.0-1  libcaca-0.99.beta20-7  libcanberra-1:0.30+r2+gc0620e4-6  libcap-2.78-1  libcap-ng-0.9.6-1  libcups-2:2.4.20-1  libdaemon-0.14-6  libdatrie-0.2.14-1  libdeflate-1.26-1  libdrm-2.4.134-1  libedit-20260512_3.1-1  libelf-0.197-1  libepoxy-1.5.10-3  libevdev-1.14.0-1  libevent-2.1.13-3  libffi-3.8.0-1  libfontenc-1.1.9-1  libgcc-16.2.1+r23+gd564253eb6c8-1  libgcrypt-1.12.4-1  libgfortran-16.2.1+r23+gd564253eb6c8-1  libglvnd-1.7.0-3  libgomp-16.2.1+r23+gd564253eb6c8-1  libgpg-error-1.61-1  libgudev-238-4  libhwasan-16.2.1+r23+gd564253eb6c8-1  libibus-1.5.34-2  libice-1.1.2-1  libidn2-2.3.8-1  libinih-62-2  libinput-1.32.0-1  libjpeg-turbo-3.2.1-1  libjxl-0.12.0-1  libksba-1.8.1-1  libldap-2.7.2-3  liblsan-16.2.1+r23+gd564253eb6c8-1  libmakepkg-dropins-20-2  libmnl-1.0.5-2  libnetfilter_conntrack-1.1.1-1  libnfnetlink-1.0.2-2  libnftnl-1.3.2-1  libnghttp2-1.71.0-1  libnghttp3-1.19.0-1  libngtcp2-1.26.0-2  libnl-3.12.0-1  libnm-1.58.1-3  libnsl-2.0.1-2  libobjc-16.2.1+r23+gd564253eb6c8-1  libogg-1.3.6-1  libp11-kit-0.26.6-1  libpcap-1.11.0-1  libpciaccess-0.19-1  libpipewire-1:1.6.11-1  libpng-1.6.59-1  libproxy-0.5.12-1  libpsl-0.21.5-2  libpulse-17.0+r134+g77d25a1e6-2  libquadmath-16.2.1+r23+gd564253eb6c8-1  librsvg-2:2.63.4-1  libsasl-2.1.28-6  libseccomp-2.6.0-1  libsecret-0.21.8.2-1  libsm-1.2.6-1  libsndfile-1.2.2-4  libssh2-1.11.1-8  libstdc++-16.2.1+r23+gd564253eb6c8-1  libsysprof-capture-51.0-1  libtasn1-4.21.0-1  libthai-0.1.30-1  libtheora-1.2.0-1  libtiff-4.7.2-2  libtirpc-1.3.8-1  libtool-2.6.2-5  libtsan-16.2.1+r23+gd564253eb6c8-1  libubsan-16.2.1+r23+gd564253eb6c8-1  libunistring-1.4.2-1  libunwind-1.8.3-1  liburcu-0.15.7-1  liburing-2.15-1  libusb-1.0.30-1  libvdpau-1.5-4  libverto-0.3.2-6  libvorbis-1.3.7-4  libvpx-1.17.0-1  libwacom-2.20.0-1  libwebp-1.6.0-2  libx11-1.8.14-1  libxau-1.0.12-1  libxcb-1.17.0-1  libxcrypt-4.5.2-1  libxcursor-1.2.3-1  libxcvt-0.1.3-1  libxdmcp-1.1.5-2  libxext-1.3.7-1  libxfixes-6.0.2-1  libxfont2-2.0.9-1  libxft-2.3.9-1  libxi-1.8.4-1  libxkbcommon-1.13.2-1  libxkbcommon-x11-1.13.2-1  libxkbfile-1.2.0-1  libxml2-2.15.4-1  libxmu-1.3.1-1  libxrandr-1.5.5-1  libxrender-0.9.13-1  libxshmfence-1.3.3-1  libxt-1.3.1-1  libxtst-1.2.6-1  libxxf86vm-1.1.7-1  licenses-20240728-1  linux-api-headers-7.3-1  llvm-libs-23.1.5-1  lm_sensors-1:3.6.2-1  lmdb-0.9.35-1  lua54-5.4.9-1  lz4-1:1.11.1-1  lzo-2.10-5  md4c-0.6.0-2  mesa-1:26.2.7-1  mkinitcpio-42.2-1  mkinitcpio-busybox-1.36.1-1  mpdecimal-4.0.1-3  mpfr-4.2.2-1  mpg123-1.33.7-1  mtdev-1.1.7-1  ncurses-6.6-2  nettle-4.0-1  nftables-1:1.1.7-3  npth-1.8-1  nspr-4.40-1  nss-3.133-1  nvidia-utils-620.70.06-1  openal-1.25.2-2  openssl-4.1.0-1  openssl-3-3.5.9-2  opus-1.6.1-1  p11-kit-0.26.6-1  pacman-7.1.0.r9.g54d9411-4  pacman-mirrorlist-20260610-1  pam-1.7.3-1  pambase-20260616-1  pango-1:1.58.2-1  pciutils-3.15.0-1  pcre-8.45-5  pcre2-10.49-1  perl-5.44.0-1  pinentry-1.3.3-1  pipewire-1:1.6.11-1  pixman-0.46.4-1  polkit-128-1  popt-1.19-2  procps-ng-4.0.7-1  psmisc-23.7-2  python-3.14.10-1  python-six-1.17.0-3  qt6-base-6.12.0-5  qt6-declarative-6.12.0-4  qt6-translations-6.12.0-1  readline-8.3.6-1  rtkit-0.14-2  sdl2-compat-2.32.74-1  sdl3-3.4.20-1  sed-4.10-2  shadow-4.20.0.arch1-1  shared-mime-info-2.5.1-2  slang-2.3.3-4  sound-theme-freedesktop-0.8-6  spdlog-1.17.0-2  speex-1.2.1-3  speexdsp-1.2.1-3  spirv-tools-1:1.4.363.0-1  sqlite-3.54.1-1  systemd-262.2-1  systemd-libs-262.2-1  systemd-sysvcompat-262.2-1  tar-1.35-5  tdb-1.4.15-2  tpm2-tss-4.2.1-2  tslib-1.24-1  tzdata-2026f-1  unzip-6.0-23  util-linux-2.42.4-1  util-linux-libs-2.42.4-1  wayland-1.26.0-1  wireless-regdb-2026.09.03-1  xcb-proto-1.17.0-4  xcb-util-0.4.1-2  xcb-util-cursor-0.1.6-1  xcb-util-image-0.4.1-3  xcb-util-keysyms-0.4.1-5  xcb-util-renderutil-0.3.10-2  xcb-util-wm-0.4.2-2  xdg-utils-1.2.1-2  xf86-input-libinput-1.5.0-1  xkeyboard-config-2.49-1  xorg-fonts-encodings-1.1.0-2  xorg-server-21.1.26-1  xorg-server-common-21.1.26-1  xorg-setxkbmap-1.3.5-1  xorg-xauth-1.1.5-1  xorg-xkbcomp-1.5.0-1  xorg-xprop-1.2.8-1  xorgproto-2026.1-1  xz-5.8.4-1  zlib-1:1.4-1  zram-generator-1.2.1-1  zstd-1.5.7-3  ananicy-cpp-1.2.0-1  arch-install-scripts-32-1  base-3-3  btrfs-progs-7.3-1  cachyos-keyring-20240331-1  cachyos-settings-1:1.4.4-1  e2fsprogs-1.47.4-1  grub-2:2.16-1  limine-12.10.0-1  linux-7.3.4.arch1-2  linux-cachyos-7.3.3-1  mkinitcpio-archiso-73-1  openssh-10.6p2-1  proton-cachyos-native-1:11.0.20261015-1  sddm-0.21.0-7  syslinux-6.04.pre3.r3.g05ac953c-5  xfsprogs-7.2.1-1
+
+Total Download Size:   1248.70 MiB
+Total Installed Size:  4328.45 MiB
+
+:: Proceed with installation? [Y/n] warning: couldn't find or create package cache, using /tmp/ instead
+
+:: Retrieving packages...
