@@ -18,7 +18,26 @@ configuración de sistema, tema de login SDDM, logo de la distro y guías de uso
 | URL inicio | https://bottasso.dev/ |
 | **Repositorio** | https://github.com/adrianbotasso9/bottasso |
 
-## estructura del proyecto
+## Contribuciones
+
+Si el proyecto te ha servido, puedes apoyarlo:
+
+### Donaciones
+| Plataforma | Enlace |
+|---|---|
+| **GitHub Sponsors** | [github.com/sponsors/adrianbotasso9](https://github.com/sponsors/adrianbotasso9) |
+| **Ko-fi** | [ko-fi.com/bottassoos](https://ko-fi.com/bottassoos) |
+| **PayPal** | [paypal.me/bottassoos](https://paypal.me/bottassoos) |
+| **Open Collective** | [opencollective.com/bottassoos](https://opencollective.com/bottassoos) |
+
+Ver: [DONATIONS.md](DONATIONS.md) para más detalles.
+
+### Colaboraciones
+- **Código:** Fork y Pull Request
+- **Documentación:** [CONTRIBUTING.md](CONTRIBUTING.md)
+- **Traducciones:** Crowdin
+
+Ver: [FINANCING.md](FINANCING.md) para el estado financiero.
 ```
 bottasso/
 ├── .github/
